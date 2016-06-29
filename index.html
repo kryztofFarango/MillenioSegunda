@@ -20,6 +20,12 @@
 
     <!-- Template styles -->
     <link href="css/style.css" rel="stylesheet">
+        <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link href="css/prettify.css" rel="stylesheet">
+
 
 </head>
 
@@ -41,8 +47,8 @@
                     <div class="full-bg-img">
                         <div style="z-index:100; background-image:url('img/textura.png'); height:100%; width:100%;">
                           <div style="float:right;">
-                            <button type="button" class="btn btn-default">Producto</button>
-                            <button type="button" class="btn btn-warning">Demo y Precios</button>
+                            <a href="#home"><button type="button" class="btn btn-default">Producto</button></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto">Demo y Precios</button>
                           </div>
                         </div>
                     </div>
@@ -64,7 +70,7 @@
                                 <p>Afilia, vende, paga comisiones.</p>
                             </li>
                             <li>
-                                <a target="_blank" href="" class="btn btn-info"><i class="fa fa-play-circle"></i> Clic para ver video</a>
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalVideo"> <i class="fa fa-play-circle"></i> Clic para ver video</button>
                             </li>
                         </ul>
                     </div>
@@ -168,8 +174,8 @@
                 <hr>
                 <strong>Replicador de página Web:</strong> para que sus afiliados cuenten con una réplica de tu página web personalizada con sus datos y a través de la cual las afiliaciones que se realicen entraran bajo el patrocinio del dueño de la réplica.
             </p>
-            <button type="button" class="btn btn-warning"><i class="fa fa-play"></i> Ver Video</button>
-            <button type="button" class="btn btn-warning"><i class="fa fa-info"></i> Demo y Precios</button>    
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>    
         </div>
         </div>
     </div>
@@ -192,8 +198,8 @@
                 <hr>
                 <strong>Tienda En Linea:</strong> Millennium cuenta con un sistema de tienda muy completo y a nivel de los mejores del mercado, en el que podrás crear tus productos divididos por categorías, manejar inventario, impuestos añadir imágenes, descripción, descuentos por calificaciones, resaltar ofertas, agruparlos por las comisiones que generan y mucho mas en un entorno de tienda configurable donde podrás cargar tu logo y personalizar sus colores incluso añadiendo un banner animado de 4 imágenes.
             </p>
-            <button type="button" class="btn btn-warning"><i class="fa fa-play"></i> Ver Video</button>
-            <button type="button" class="btn btn-warning"><i class="fa fa-info"></i> Demo y Precios</button>                    
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                    
         </div>
             <div class="col-md-6 wow fadeInRight">
                 <img class="img-responsive"src="img/tienda.jpg" style="width:100%;"> 
@@ -222,8 +228,8 @@
                 <hr>
                 <strong>Panel administrativo:</strong> desde el cual podrá controlar todos los aspectos de su negocio, incluir productos, configurar el tipo de matriz, estructurar el formulario de registro, crear tus conceptos de pago, niveles de pago y comisiones, crear programas de incentivos, calcular comisiones, autorizar compras y registros de afiliados y consultar reportes de todas las transacciones.
             </p>
-            <button type="button" class="btn btn-warning"><i class="fa fa-play"></i> Ver Video</button>
-            <button type="button" class="btn btn-warning"><i class="fa fa-info"></i> Demo y Precios</button>                
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                
         </div>
         </div>
     <div class="row contentres" style="background-image:url('img/imagencentro.jpg'); min-height:400px; background-size: 100%; background-position: 0px 30%;">
@@ -250,8 +256,8 @@
                 <hr>
                 <strong>BackOffice:</strong> una oficina virtual para sus afiliados desde la cual podrán consultar su árbol genealógico, el avance de sus comisiones, realizar compras, modificar sus datos personales y mucho más.
             </p>
-            <button type="button" class="btn btn-warning"><i class="fa fa-play"></i> Ver Video</button>
-            <button type="button" class="btn btn-warning"><i class="fa fa-info"></i> Demo y Precios</button>                    
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                    
         </div>
             <div class="col-md-6 wow fadeInRight" style="float:right;">
                 <img class="img-responsive"src="img/oficina.png"> 
@@ -266,7 +272,24 @@
         </div>
     </div>
     <!--Billetera Content-->
-    <div class="row contentres" id="billetera" style="min-height:650px; background:purple;">
+    <div class="row contentres" id="billetera" style="background-color:white;">
+        <div class="container">
+            <div class="divider-new wow fadeInDown">
+                <h2 class="h2-responsive modulosClass">Billetera o Ewallet</h2>
+            </div>
+            <div class="col-md-6 wow fadeInLeft">
+            <img class="img-responsive"src="img/billetera.png" style="width:100%;"> 
+            </div>
+             <div class="col-md-6 wow fadeInRight fixrow">
+            <p class="text-justify">
+                <h2></h2>
+                <hr>
+                <strong>Se requiere texto:</strong> desde el cual podrá controlar todos los aspectos de su negocio, incluir productos, configurar el tipo de matriz, estructurar el formulario de registro, crear tus conceptos de pago, niveles de pago y comisiones, crear programas de incentivos, calcular comisiones, autorizar compras y registros de afiliados y consultar reportes de todas las transacciones.
+            </p>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                
+        </div>
+        </div>     
     </div>
     <!--Matriz Btn-->
         <div class="row btnres" style="background:brown;" onclick="scrolleame('#matriz');">    
@@ -275,67 +298,86 @@
             <i class="fa fa-camera-retro fa-5x"></i>
         </div>
     </div>
-    <!--Oficina Matriz-->
-    <div class="row contentres" id="matriz" style="min-height:650px; background:purple;">
+    <!--Matriz Content-->
+   <div class="row contentres" id="matriz" style="background-color:white;">
+        <div class="container">
+            <div class="divider-new wow fadeInDown">
+                <h2 class="h2-responsive modulosClass">Matriz y Plan de ceompensación</h2>
+            </div>
+        <div class="col-md-6 wow fadeInLeft fixrow">
+            <p class="text-justify">
+                <h2></h2>
+                <hr>
+                <strong>Se requiere texto</strong> Millennium cuenta con un sistema de tienda muy completo y a nivel de los mejores del mercado, en el que podrás crear tus productos divididos por categorías, manejar inventario, impuestos añadir imágenes, descripción, descuentos por calificaciones, resaltar ofertas, agruparlos por las comisiones que generan y mucho mas en un entorno de tienda configurable donde podrás cargar tu logo y personalizar sus colores incluso añadiendo un banner animado de 4 imágenes.
+            </p>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                    
+        </div>
+            <div class="col-md-6 wow fadeInRight">
+                <img class="img-responsive"src="img/matriz.png" style="width:100%;"> 
+            </div>        
+        </div>
     </div>
     <!--.Content-->
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
+<div class="container" style="padding-bottom:25px;">
+<div id="clientes">
+          
+  <div class="item"><img src="img/assets/logo1.png" alt=""></div>
+  <div class="item"><img src="img/assets/logo2.png" alt=""></div>
+  <div class="item"><img src="img/assets/logo3.png" alt=""></div>
+  <div class="item"><img src="img/assets/logo4.png" alt=""></div>
+
+ 
+</div>
+    
+</div><!--.container-->
 
         <!--Footer Links-->
         <div class="container-fluid">
-            <div class="row">
+            <div class="container">
 
                 <!--First column-->
-                <div class="col-md-3 col-md-offset-1">
-                    <h5 class="title">Millennium Logo</h5>
-                    <p>Texto</p>
-
-                    <p>Texto</p>
+                <div class="col-md-4">
+                    <img class="img-responsive" src="img/logotransparente.png" style="width:80%; padding-bottom:25px;">
+                    <p><strong>Millennium</strong><br>
+2040 Alameda Padre Serra #220<br>
+Santa Barbara, CA 93103</p>
                 </div>
                 <!--/.First column-->
 
                 <hr class="hidden-md-up">
 
                 <!--Second column-->
-                <div class="col-md-2 col-md-offset-1">
-                    <h5 class="title">First column</h5>
+                <div class="col-md-4">
+                    <h5 class="title">Producto</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <li><a href="#replica">Réplica Web</a></li>
+                        <li><a href="#tienda">Tienda Online</a></li>
+                        <li><a href="#modelo">Módulo Administrador</a></li>
+                        <li><a href="#oficina">Oficina Virtual</a></li>
+                        <li><a href="#billetera">Billetera o Ewallet</a></li>
+                        <li><a href="#matriz">Matríz y Plan de compensación</a></li>
+
                     </ul>
                 </div>
                 <!--/.Second column-->
 
-                <hr class="hidden-md-up">
+
 
                 <!--Third column-->
-                <div class="col-md-2">
-                    <h5 class="title">Second column</h5>
+                <div class="col-md-4">
+                    <h5 class="title">Demo Y Precios</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>
                 </div>
                 <!--/.Third column-->
 
                 <hr class="hidden-md-up">
 
                 <!--Fourth column-->
-                <div class="col-md-2">
-                    <h5 class="title">Third column</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
 
             </div>
         </div>
@@ -358,8 +400,84 @@
     </footer>
     <!--/.Footer-->
 
+<!--Modals-->
+<!-- Modal Form -->
+<div class="modal fade modal-ext" id="ModalProducto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Registrate para ver demo</h4>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                        <p>Queremos brindar la mejor atencion posible evaluando sus necesidades y requerimientos de forma directa y personal, por eso, lo invitamos a conversar con nosotros por la via que mejor se adapte a sus posibilidades.</p>
+                        <br>
+                        <div class="md-form">
+                            <i class="fa fa-user fa-2x"></i>
+                            <input placeholder="Nombre y Apellido" type="text" id="name" class="form-control">
+                        </div>
 
+                        <div class="md-form">
+                            <i class="fa fa-envelope fa-2x"></i>
+                            <input placeholder="Email"  type="text" id="email" class="form-control">
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-whatsapp fa-2x"></i>
+                            <input placeholder="Número de WhatsApp" type="number" id="numero" class="form-control">
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-whatsapp fa-2x"></i>
+                            <textarea placeholder="Requerimiento" type="text" id="form76" class="md-textarea"></textarea>
+                        </div>
+
+                    </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+                <button type="submit" value="Submit" class="btn btn-primary">Enviar</button>
+            </div>
+        <!--/.Content-->
+        </div>
+   </div>
+</div>
+<!-- /.Live preview-->
+<div class="modal fade modal-ext" id="ModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-lg" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Millenium</h4>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
+                        <iframe id="millenniumVideo" width="100%" height="500px" src="https://www.youtube.com/embed/cTc9cHr6S9U" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+            </div>
+        <!--/.Content-->
+        </div>
+   </div>
+</div>
+<!-- /.Live preview-->
+
+
+<!--/.Modals-->
     <!-- SCRIPTS -->
+
 
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
@@ -383,8 +501,33 @@
                else {
                  $('#mainnav').removeClass('navbar-fixed-top');
                }
+
             });
+
+            var url = $("#millenniumVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+        $("#ModalVideo").on('hide.bs.modal', function(){
+            $("#millenniumVideo").attr('src', '');
+            });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+        $("#ModalVideo").on('show.bs.modal', function(){
+            $("#millenniumVideo").attr('src', url);
         });
+    $("#clientes").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
+    });
+
 
     function scrolleame(target){
                 $('html, body').animate({
@@ -392,10 +535,17 @@
                 }, 600);
                 $(target).toggle();
             }
+
     </script>
-    <script>
+<script>
 new WOW().init();
 </script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/application.js"></script>
 
 </body>
 
