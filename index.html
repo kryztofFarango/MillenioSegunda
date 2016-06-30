@@ -40,17 +40,24 @@
                 <div class="view hm-black-light">
 
                     <!--Video source-->
-                    <video class="video-full videores" autoplay loop style=" z-index:-1;">
+                    <video class="video-full videores contentres" autoplay loop style=" z-index:-1;">
                         <source src="videos/videohome.mp4" type="video/mp4" />
                     </video>
-
+                    <video class="video-full videores btnres" autoplay loop style=" z-index:-1;">
+                        <source src="videos/videohomemobile.mp4" type="video/mp4" />
+                    </video>
                     <div class="full-bg-img">
                         <div style="z-index:100; background-image:url('img/textura.png'); height:100%; width:100%;">
-                          <div style="float:right;">
-                            <a href="#home"><button type="button" class="btn btn-default">Producto</button></a>
-                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto">Demo y Precios</button>
+                         <div class="topbrand" style="background-color: rgba(0, 0, 0, .7); height:70px; padding: 10px;">
+                            <div style="float:left;">
+                                <img src="img/millenniumlogo.png">
+                            </div>  
+                            <div style="float:right;">
+                                <a href="#home"><button type="button" class="btn btn-default">Producto</button></a>
+                                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto">Demo y Precios</button>
+                            </div>
                           </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <!--Caption-->
@@ -60,9 +67,15 @@
        
                         <ul>
                             <li>
-                            <div>
+                        
+                            <div class="brand">
+                           <div style="float:right margin-top:-100px;">
+                            <a href="#home"><button type="button" class="btn btn-default">Producto</button></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto">Demo y Precios</button>
+                           </div>
                                <img src="img/millenniumlogo.png">
                             </div>
+                            
                             </li>
                             <li>
                                 <h1 class="h1-responsive">Tu Software Multinivel</h1></li>
@@ -86,7 +99,7 @@
     <!--/.Main layout-->
     <!--Content-->
     <div data-spy="affix" data-offset-top="121">
-    <nav id="mainnav" class="navbar navbar-dark primary-color-dark navbar " >
+    <nav id="mainnav" class="navbar navbar-dark primary-color-dark navbar contentres" >
             <!-- Collapse button-->
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
                 <i class="fa fa-bars"></i>
@@ -127,12 +140,14 @@
     </div>
     <!--Contenido-->
         <!--home Btn-->
-    <div class="row btnres" style="background:green;" onclick="scrolleame('#home');">    
-        <div class="col-md-12" style="cursor:pointer;" >
-            <h1>Producto<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+    <hr>    
+    <div class="container btnres btnRes" onclick="scrolleame('#home');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;" >
+            
+            <div style="color:#ff6600!important;"><i class="fa fa-th-large fa-3x iconRes"></i><h2><strong>Producto</strong><h2></div>
         </div>
     </div>
+    <hr class="btnres">
     <!--home Content-->
 
 <section>
@@ -153,12 +168,13 @@
         <h1 class="titulos wow fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
     </div>
     <!--Réplicas Web Btn-->
-    <div class="row btnres" style="background:yellow;" onclick="scrolleame('#replicas');">    
-        <div class="col-md-12" style="cursor:pointer;" >
-            <h1>Replicas Web<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+    <div class="container btnres btnRes"  onclick="scrolleame('#replicas');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;" >
+            <div style="color:#ff1a1a!important;"><i class="fa fa-desktop fa-3x iconRes"></i><h2><strong>Replicas Web</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Réplicas Web Content-->
     <div class="row contentres" id="replicas" style="background-color:white;">
         <div class="container">
@@ -180,12 +196,13 @@
         </div>
     </div>
     <!--Tienda Btn-->
-    <div class="row btnres" style="background:brown;" onclick="scrolleame('#tienda');">    
-        <div class="col-md-12" style="cursor:pointer;">
-            <h1>Tienda Online<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+    <div class="container btnres btnRes"  onclick="scrolleame('#tienda');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;">
+            <div style="color:#4da6ff;"><i class="fa fa-shopping-cart fa-3x iconRes"></i><h2><strong>Tienda Online</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Tienda Content-->
    <div class="row contentres" id="tienda" style="background-color:white;">
         <div class="container">
@@ -207,12 +224,13 @@
         </div>
     </div>
     <!--Modulo Btn-->
-    <div class="row btnres" style="background:brown;"  onclick="scrolleame('#modulo');">    
-        <div class="col-md-12" style="cursor:pointer;">
-            <h1>Módulo Administrador<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+    <div class="container btnres btnRes" onclick="scrolleame('#modulo');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;">
+            <div style="color:#77b300;"><i class="fa fa-tachometer fa-3x iconRes"></i> <h2><strong>Módulo Administrador</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Módulo content-->
     <div class="row contentres" id="modulo" style="background-color:white;">
         <div class="container">
@@ -238,12 +256,13 @@
     </div>        
     </div>
     <!--Oficina Btn-->
-        <div class="row btnres" style="background:brown;" onclick="scrolleame('#oficina');">    
-        <div class="col-md-12" style="cursor:pointer;">
-            <h1>Oficina <h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+        <div class="container btnres btnRes" onclick="scrolleame('#oficina');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;">
+            <div style="color:#2eb8b8;"><i class="fa fa-building fa-3x iconRes"></i><h2><strong>Oficina</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Oficina Content-->
     <div class="row contentres" id="oficina" style="background-color:white;">
         <div class="container">
@@ -265,12 +284,13 @@
         </div>
     </div>
     <!--Billetera Btn-->
-        <div class="row btnres" style="background:brown;" onclick="scrolleame('#billetera');">    
-        <div class="col-md-12" style="cursor:pointer;">
-            <h1>Billetera o Ewallet<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+        <div class="container btnres btnRes" onclick="scrolleame('#billetera');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;">
+            <div style="color:#53c68c;"><i class="fa fa-credit-card fa-3x iconRes"></i><h2><strong>Billetera o Ewallet</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Billetera Content-->
     <div class="row contentres" id="billetera" style="background-color:white;">
         <div class="container">
@@ -292,17 +312,18 @@
         </div>     
     </div>
     <!--Matriz Btn-->
-        <div class="row btnres" style="background:brown;" onclick="scrolleame('#matriz');">    
-        <div class="col-md-12" style="cursor:pointer;">
-            <h1>Matriz y Plan de compensación<h1>
-            <i class="fa fa-camera-retro fa-5x"></i>
+        <div class="container btnres btnRes" onclick="scrolleame('#matriz');">    
+        <div class="col-md-12 btnres" style="cursor:pointer;">
+            <div style="color:#cc0099;"><i class="fa fa fa-sitemap fa-3x iconRes"></i><h2><strong>Matriz y Plan de compensación</strong><h2></div>
+            
         </div>
     </div>
+    <hr class="btnres">
     <!--Matriz Content-->
    <div class="row contentres" id="matriz" style="background-color:white;">
         <div class="container">
             <div class="divider-new wow fadeInDown">
-                <h2 class="h2-responsive modulosClass">Matriz y Plan de ceompensación</h2>
+                <h2 class="h2-responsive modulosClass">Matriz y Plan de compensación</h2>
             </div>
         <div class="col-md-6 wow fadeInLeft fixrow">
             <p class="text-justify">

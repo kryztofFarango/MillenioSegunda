@@ -104,3 +104,50 @@ width: 100%;
     padding-right: 50px;
     text-align: justify;
 }
+/*owl carrousel*/
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+¨/*Top*/
+.topbrand {
+background-color: rgba(0, 0, 0, .7); 
+height:70px; 
+padding: 10px;
+}
+@media (max-width: 525px) {
+.topbrand {
+ display:none;
+}
+}
+@media (min-width: 525px){
+.brand{
+    display: none;
+}
+}
+@media (max-width: 525px) {
+.brand{
+ display:block;
+}
+}
+
+.btnRes{
+    background-color: white;
+
+
+    text-align: center;
+
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    display: inline;
+
+}
+.iconRes{
+    float: left;
+}
