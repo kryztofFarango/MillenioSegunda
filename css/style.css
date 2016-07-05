@@ -188,81 +188,81 @@ padding: 10px;
 }
 
 /*Menu*/
-.replicabtn{
-  color:#ff1a1a!important;
+.replicabtn {
+  color:#ff1a1a !important;
 }
 .replicabtn:hover{
-  color:white!important;
+  color:white !important;
 }
-.replicabtn:active{
-  color:white!important;
+.replicabtn:active {
+  color:white !important;
 }
-#replica:active{
-  color: white!important;
-  background-color: #ff1a1a!important;
+#replica:active {
+  color: white !important;
+  background-color: #ff1a1a !important;
 }
-#replica:hover{
-  color: white!important;
-  background-color: #ff1a1a!important;
+#replica:hover {
+  color: white !important;
+  background-color: #ff1a1a !important;
 }
 
 
 
 /**/
-.tiendabtn{
+.tiendabtn {
   color:#4da6ff!important;
 }
-.tiendabtn:hover{
-  color:white!important;
+.tiendabtn:hover {
+  color:white !important;
 }
-.tiendabtn:active{
-  color:white!important;
+.tiendabtn:active {
+  color:white !important;
 }
-#tiendas:active{
-  color: white!important;
-  background-color: #4da6ff!important;
+#tiendas:active {
+  color: white !important;
+  background-color: #4da6ff !important;
 }
-#tiendas:hover{
-  color: white!important;
-  background-color: #4da6ff!important;
+#tiendas:hover {
+  color: white !important;
+  background-color: #4da6ff !important;
 }
 
 /**/
 .modulobtn{
-  color:#77b300!important;
+  color:#77b300 !important;
 }
-.modulobtn:hover{
-  color:white!important;
+.modulobtn:hover {
+  color:white !important;
 }
-.modulobtn:active{
-  color:white!important;
+.modulobtn:active {
+  color:white !important;
 }
-#modulos:active{
-  color: white!important;
-  background-color: #77b300!important;
+#modulos:active {
+  color: white !important;
+  background-color: #77b300 !important;
 }
-#modulos:hover{
-  color: white!important;
-  background-color: #77b300!important;
+#modulos:hover {
+  color: white !important;
+  background-color: #77b300 !important;
 }
 
 /**/
-.oficinabtn{
-  color:#2eb8b8!important;
+.oficinabtn {
+  color:#2eb8b8 !important;
 }
-.oficinabtn:hover{
-  color:white!important;
+.oficinabtn:hover {
+  color:white !important;
 }
-.oficinabtn:active{
-  color:white!important;
+.oficinabtn:active {
+  color:white !important;
 }
-#oficinas:active{
-  color: white!important;
-  background-color: #2eb8b8!important;
+#oficinas:active {
+  color: white !important;
+  background-color: #2eb8b8 !important;
 }
-#oficinas:hover{
-  color: white!important;
-  background-color: #2eb8b8!important;
+#oficinas:hover {
+  color: white !important;
+  background-color: #2eb8b8 !important;
 }
 
 /**/
