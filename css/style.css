@@ -148,6 +148,7 @@ padding: 10px;
     display: inline;
 
 }
+
 .iconRes{
     float: left;
 }
@@ -185,3 +186,122 @@ padding: 10px;
     background-position: 100% 50%;
   }
 }
+
+/*Menu*/
+.replicabtn{
+  color:#ff1a1a!important;
+}
+.replicabtn:hover{
+  color:white!important;
+}
+.replicabtn:active{
+  color:white!important;
+}
+#replica:active{
+  color: white!important;
+  background-color: #ff1a1a!important;
+}
+#replica:hover{
+  color: white!important;
+  background-color: #ff1a1a!important;
+}
+
+
+
+/**/
+.tiendabtn{
+  color:#4da6ff!important;
+}
+.tiendabtn:hover{
+  color:white!important;
+}
+.tiendabtn:active{
+  color:white!important;
+}
+#tiendas:active{
+  color: white!important;
+  background-color: #4da6ff!important;
+}
+#tiendas:hover{
+  color: white!important;
+  background-color: #4da6ff!important;
+}
+
+/**/
+.modulobtn{
+  color:#77b300!important;
+}
+.modulobtn:hover{
+  color:white!important;
+}
+.modulobtn:active{
+  color:white!important;
+}
+#modulos:active{
+  color: white!important;
+  background-color: #77b300!important;
+}
+#modulos:hover{
+  color: white!important;
+  background-color: #77b300!important;
+}
+
+/**/
+.oficinabtn{
+  color:#2eb8b8!important;
+}
+.oficinabtn:hover{
+  color:white!important;
+}
+.oficinabtn:active{
+  color:white!important;
+}
+#oficinas:active{
+  color: white!important;
+  background-color: #2eb8b8!important;
+}
+#oficinas:hover{
+  color: white!important;
+  background-color: #2eb8b8!important;
+}
+
+/**/
+.billeterabtn{
+  color:#53c68c!important;
+}
+.billeterabtn:hover{
+  color:white!important;
+}
+.billeterabtn:active{
+  color:white!important;
+}
+#billeteras:active{
+  color: white!important;
+  background-color: #53c68c!important;
+}
+#billeteras:hover{
+  color: white!important;
+  background-color: #53c68c!important;
+}
+
+
+/**/
+.matrizbtn{
+  color:#cc0099!important;
+}
+.matrizbtn:hover{
+  color:white!important;
+}
+.matrizbtn:active{
+  color:white!important;
+}
+#matrizs:active{
+  color: white!important;
+  background-color: #cc0099!important;
+}
+#matrizs:hover{
+  color: white!important;
+  background-color: #cc0099!important;
+}
+
+
