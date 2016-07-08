@@ -25,8 +25,7 @@
     <link href="css/owl.theme.css" rel="stylesheet">
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript">
 $(function(){
 
@@ -137,15 +136,17 @@ $(function(){
                 <i class="fa fa-bars"></i>
             </button>
 
-            <div class="row">
+            <div>
 
                 <!--Collapse content-->
                 <div clas=s"collapse navbar-toggleable-xs" id="collapseEx">
 
                     <!--Links-->
                     <ul class="nav navbar-nav">
-                        <a class="nav-link waves-effect waves-light replicabtn col-md-12" href="#replicas">
-                            <li id="replica" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
+
+                        
+                            <a class="waves-effect waves-light replicabtn" href="#replicas">
+                                <li id="replica" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                             
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
                                   <div>
@@ -155,56 +156,66 @@ $(function(){
                                 </div>
                             
                         </li></a>
+
+                    <a class="waves-effect waves-light tiendabtn" href="#tienda">                   
                         <li id="tiendas" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style:solid; border-width: 2px; border-color: #f2f2f2;">
-                            <a class="nav-link waves-effect waves-light" href="#tienda">
+
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
-                                    <div class="tiendabtn">
+                                    <div>
                                         <div><i class="fa fa-shopping-cart fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Tienda Online</p></div>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </li>
-                        <li id="modulos"class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
-                            <a class="nav-link waves-effect waves-light" href="#modulo">
+                        </a>
+
+                        <a class="waves-effect waves-light modulobtn" href="#modulo"> 
+                            <li id="modulos"class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;" >
-                                    <div class="modulobtn">
+                                    <div>
                                         <div><i class="fa fa-tachometer fa-2x"></i></div>  
                                         <div><p style="text-align:center; padding-top:20px;">Módulo Administrador</p></div>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </li>
-                        <li id="oficinas" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
-                            <a class="nav-link waves-effect waves-light" href="#oficina">
+                        </a>
+                        <a class="waves-effect waves-light oficinabtn" href="#oficina">
+                            <li id="oficinas" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
-                                    <div class="oficinabtn">
+                                    <div>
                                         <div><i class="fa fa-building fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Oficina</p></div>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </li>
+                        </a>
+                        <a class="waves-effect waves-light billeterabtn" href="#billetera">
                         <li id="billeteras"class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
-                            <a class="nav-link waves-effect waves-light" href="#billetera">
+                            
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
-                                    <div class="billeterabtn">
+                                    <div>
                                         <div><i class="fa fa-credit-card fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Billetera o Ewallet</p></div>
                                     </div>
                                 </div>
-                            </a>
+                            
                         </li>
+                        </a>
+                        <a class="waves-effect waves-light matrizbtn" href="#matriz">
                         <li id="matrizs" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;">
-                            <a class="nav-link waves-effect waves-light" href="#matriz">
+                            
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
-                                 <div class="matrizbtn">
+                                 <div>
                                     <div><i class="fa fa fa-sitemap fa-2x"></i></div>
                                     <div><p style="text-align:center; padding-top:20px; line-height:1;">Matriz y Plan <br/> de compensación</p></div>
                                 </div>
                                 </div>
-                            </a>
+                            
                         </li>
+                        </a>
                     </ul>
                 </div>
                 <!--/.Collapse content-->
@@ -240,7 +251,7 @@ $(function(){
     </div>
 </section>
     -->
-    <div class="row contentres" style="background-image:url('img/imagenintro.jpg'); min-height:400px; background-size:100%">
+    <div class="contentres" style="background-image:url('img/imagenintro.jpg'); min-height:400px; background-size:100%">
         <h1 class="titulos  fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
         <div id="replicas" style="height:120px;"></div>
     </div>
@@ -256,7 +267,7 @@ $(function(){
     </div>
         <hr class="btnres">
     <!--Réplicas Web Content-->
-    <div class="row contentres" style="background-color:white;">
+    <div class="contentres" style="background-color:white;">
         <div class="container">
 
             <div class="col-md-6  fadeInLeft">
@@ -286,7 +297,7 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Tienda Content-->
-   <div class="row contentres"  style="background-color:white;">
+   <div class="contentres"  style="background-color:white;">
         <div class="container">
 
         <div class="col-md-6  fadeInLeft fixrow">
@@ -316,15 +327,12 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Módulo content-->
-    <div class="row contentres" style="background-color:white;">
-        <div class="container">
-
-                
-            </div>
-            <div class="col-md-6  fadeInLeft">
+<div class="contentres" style="background-color:white;">
+    <div class="container">
+        <div class="col-md-6  fadeInLeft">
             <img class="img-responsive"src="img/modulo.png" style="width:100%;"> 
-            </div>
-             <div class="col-md-6  fadeInRight fixrow">
+        </div>
+        <div class="col-md-6  fadeInRight fixrow">
             <p class="text-justify">
                 <h2 class="textA textSpan">Módulo Administrador</h2>
                 <hr>
@@ -334,13 +342,9 @@ $(function(){
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                
         </div>
 
-        </div>
-    <!--<div class="row contentres" style="background-image:url('img/imagencentro.jpg'); min-height:400px; background-size: 100%; background-position: 0px 30%;">
-
-        <h1 class="titulos  fadeInDown" style="">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
-    </div>-->   
-<div id="oficina" style="height:120px;"></div>     
     </div>
+    <div id="oficina" style="height:120px;"></div>     
+</div>
     <!--Oficina Btn-->
         <div class="container btnres btnRes" onclick="scrolleame('#oficina');">    
         <div class="col-md-12 btnres" style="cursor:pointer;">
@@ -353,7 +357,7 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Oficina Content-->
-    <div class="row contentres"  style="background-color:white;">
+    <div class="contentres"  style="background-color:white;">
         <div class="container">
 
         <div class="col-md-6  fadeInLeft fixrow">
@@ -365,8 +369,8 @@ $(function(){
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalVideo"><i class="fa fa-play"></i> Ver Video</button>
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                    
         </div>
-            <div class="col-md-6  fadeInRight" style="float:right;">
-                <img class="img-responsive"src="img/oficina.png"> 
+            <div class="col-md-6  fadeInRight">
+                <img class="img-responsive"src="img/oficina.png" style="width:100%;"> 
             </div>        
         </div>
     </div>
@@ -383,7 +387,7 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Billetera Content-->
-    <div class="row contentres"  style="background-color:white;">
+    <div class="contentres"  style="background-color:white;">
         <div class="container">
 
             <div class="col-md-6  fadeInLeft">
@@ -413,7 +417,7 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Matriz Content-->
-   <div class="row contentres"  style="background-color:white;">
+   <div class="contentres"  style="background-color:white;">
         <div class="container">
 
         <div class="col-md-6  fadeInLeft fixrow">
@@ -546,7 +550,7 @@ Santa Barbara, CA 93103</p>
                             <input placeholder="Número de WhatsApp" type="number" id="numero" class="form-control">
                         </div>
                         <div class="md-form">
-                            <i class="fa fa-whatsapp fa-2x"></i>
+                            <i class="fa fa-pencil fa-2x"></i>
                             <textarea placeholder="Requerimiento" type="text" id="form76" class="md-textarea"></textarea>
                         </div>
 
