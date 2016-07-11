@@ -331,3 +331,20 @@ padding: 10px;
   width: 85% !important;
   padding-top: 10px
 }
+@media (min-width: 525px) {
+
+.backoffice{
+  background-image: url('../img/oficina.png'); 
+  background-repeat:no-repeat; 
+  background-position-x: right;
+  background-color: transparent;
+}
+}
+@media (max-width: 525px) {
+.backoffice {
+   background-color: white; 
+     margin-right: 0rem;
+  margin-left: 0rem;
+
+}
+
