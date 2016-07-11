@@ -190,7 +190,7 @@ padding: 10px;
 /*Menu*/
 
 .replicabtn {
-  color:#ff1a1a !important;
+  color: #ff8c1a!important;
 }
 .replicabtn:hover {
   color:white !important;
@@ -200,11 +200,11 @@ padding: 10px;
 }
 #replica:active {
   color: white !important;
-  background-color: #ff1a1a !important;
+  background-color:  #ff8c1a !important;
 }
 #replica:hover {
   color: white !important;
-  background-color: #ff1a1a !important;
+  background-color:  #ff8c1a !important;
 }
 
 
@@ -288,7 +288,7 @@ padding: 10px;
 
 /**/
 .matrizbtn{
-  color:#cc0099!important;
+  color: #cc6600!important;
 }
 .matrizbtn:hover{
   color:white!important;
@@ -298,11 +298,11 @@ padding: 10px;
 }
 #matrizs:active{
   color: white!important;
-  background-color: #cc0099!important;
+  background-color:  #cc6600!important;
 }
 #matrizs:hover{
   color: white!important;
-  background-color: #cc0099!important;
+  background-color:  #cc6600 !important;
 }
 
 
@@ -311,7 +311,7 @@ padding: 10px;
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
+    overflow: hidden;
 }
 
 .video-container iframe,
@@ -322,4 +322,12 @@ padding: 10px;
     left: 0;
     width: 100%;
     height: 100%;
+}
+.modal-bodya {
+  position: relative;
+}
+.modal-dialoga{
+  position: relative;
+  width: 85% !important;
+  padding-top: 10px
 }

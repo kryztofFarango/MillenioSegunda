@@ -26,36 +26,13 @@
 
 
 
-<script type="text/javascript">
-$(function(){
 
-     $('a[href*=#]').click(function() {
-
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
-
-             var $target = $(this.hash);
-
-             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
-             if ($target.length) {
-
-                 var targetOffset = $target.offset().top;
-
-                 $('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                 return false;
-
-            }
-
-       }
-
-   });
-
-});
-</script>
 
     <link href="css/prettify.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+
+    
 
 
 </head>
@@ -74,8 +51,8 @@ $(function(){
                     <video class="video-full videores contentres" autoplay loop style=" z-index:-1;" poster="/img/video.jpg">
                         <source src="videos/videohome.mp4" type="video/mp4" />
                     </video>
-                    <video class="video-full videores btnres" autoplay loop style=" z-index:-1;">
-                        <source src="videos/videohomemobile.mp4" type="video/mp4" />
+                    <video class="video-full videores btnres" autoplay loop style=" z-index:-1;" oster="/img/video.jpg"> 
+                        <source src="videos/videoandroid.mp4" type="video/mp4" />
                     </video>
                     <div class="full-bg-img">
                         
@@ -116,6 +93,9 @@ $(function(){
                             <li>
                             <button  type="button" class="btn btn-info" data-toggle="modal" data-target="#ModalVideo"> <i class="fa fa-play-circle"></i> Clic para ver video</button>
                             </li>
+                            <li>
+                                <a href="#home"> <i class="fa fa-arrow-circle-o-down fa-2x" style="color:white"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -146,9 +126,9 @@ $(function(){
 
                         
                             <a class="waves-effect waves-light replicabtn" href="#replicas">
-                                <li id="replica" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
+                                <li id="replica" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                             
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                   <div>
                                     <div><i class="fa fa-desktop fa-2x"></i></div>
                                     <div><p style="text-align:center; padding-top:20px;">Replicas Web</p></div>
@@ -158,9 +138,9 @@ $(function(){
                         </li></a>
 
                     <a class="waves-effect waves-light tiendabtn" href="#tienda">                   
-                        <li id="tiendas" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style:solid; border-width: 2px; border-color: #f2f2f2;">
+                        <li id="tiendas" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style:solid; border-width: 2px; border-color: #f2f2f2;">
 
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                     <div>
                                         <div><i class="fa fa-shopping-cart fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Tienda Online</p></div>
@@ -171,8 +151,8 @@ $(function(){
                         </a>
 
                         <a class="waves-effect waves-light modulobtn" href="#modulo"> 
-                            <li id="modulos"class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;" >
+                            <li id="modulos"class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;" >
                                     <div>
                                         <div><i class="fa fa-tachometer fa-2x"></i></div>  
                                         <div><p style="text-align:center; padding-top:20px;">Módulo Administrador</p></div>
@@ -182,8 +162,8 @@ $(function(){
                         </li>
                         </a>
                         <a class="waves-effect waves-light oficinabtn" href="#oficina">
-                            <li id="oficinas" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
+                            <li id="oficinas" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                     <div>
                                         <div><i class="fa fa-building fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Oficina</p></div>
@@ -193,9 +173,9 @@ $(function(){
                         </li>
                         </a>
                         <a class="waves-effect waves-light billeterabtn" href="#billetera">
-                        <li id="billeteras"class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
+                        <li id="billeteras"class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                             
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                     <div>
                                         <div><i class="fa fa-credit-card fa-2x"></i></div>
                                         <div><p style="text-align:center; padding-top:20px;">Billetera o Ewallet</p></div>
@@ -205,12 +185,12 @@ $(function(){
                         </li>
                         </a>
                         <a class="waves-effect waves-light matrizbtn" href="#matriz">
-                        <li id="matrizs" class="nav-item col-md-2" style="margin-left: 0; min-height: 120px;">
+                        <li id="matrizs" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;">
                             
-                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:10px;">
+                                <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                  <div>
                                     <div><i class="fa fa fa-sitemap fa-2x"></i></div>
-                                    <div><p style="text-align:center; padding-top:20px; line-height:1;">Matriz y Plan <br/> de compensación</p></div>
+                                    <div><p style="text-align:center; padding-top:20px; line-height:1;">Matriz y Planes</p></div>
                                 </div>
                                 </div>
                             
@@ -252,13 +232,14 @@ $(function(){
 </section>
     -->
     <div class="contentres" style="background-image:url('img/imagenintro.jpg'); min-height:400px; background-size:100%">
-        <h1 class="titulos  fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
-        <div id="replicas" style="height:120px;"></div>
+        <h1 style="padding-top:250px" class="titulos  fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
     </div>
+    <div style="height: 90px" id="replicas" class="contentres" ></div>
+
     <!--Réplicas Web Btn-->
     <div class="container btnres btnRes"  onclick="scrolleame('#replicas');">    
         <div class="col-md-12 btnres" style="cursor:pointer;" >
-            <div style="color:#ff1a1a!important;">
+            <div style="color: #ff8c1a!important;">
                 <div class="col-md-4"><i class="fa fa-desktop fa-3x iconRes"></i></div>
                 <div class="col-md-8"><h2 style="text-align:left; padding-left:60px;"><strong>Replicas Web</strong><h2></div>
             </div>
@@ -271,7 +252,7 @@ $(function(){
         <div class="container">
 
             <div class="col-md-6  fadeInLeft">
-            <img class="img-responsive"src="img/replica.jpg" style="width:100%;"> 
+            <img class="img-responsive" src="img/replica.jpg" style="width:100%;"> 
             </div>
              <div class="col-md-6  fadeInRight fixrow">
             <p class="text-justify">
@@ -357,7 +338,8 @@ $(function(){
     </div>
     <hr class="btnres">
     <!--Oficina Content-->
-    <div class="contentres"  style="background-color:white;">
+<div class="row col-md-12" style="background-image: url(img/oficina.png); background-repeat:no-repeat; background-position-x: right;">
+    <div class="contentres">
         <div class="container">
 
         <div class="col-md-6  fadeInLeft fixrow">
@@ -370,11 +352,11 @@ $(function(){
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                    
         </div>
             <div class="col-md-6  fadeInRight">
-                <img class="img-responsive"src="img/oficina.png" style="width:100%;"> 
             </div>        
         </div>
+            <div id="billetera" style="height:120px;"></div>
     </div>
-    <div id="billetera" style="height:120px;"></div>
+</div>
     <!--Billetera Btn-->
         <div class="container btnres btnRes" onclick="scrolleame('#billetera');">    
         <div class="col-md-12 btnres" style="cursor:pointer;">
@@ -403,14 +385,15 @@ $(function(){
             <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto"><i class="fa fa-info"></i> Demo y Precios</button>                
         </div>
         </div>     
+            <div id="matriz" style="height:120px;"></div>
+
     </div>
-    <div id="matriz" style="height:120px;"></div>
     <!--Matriz Btn-->
         <div class="container btnres btnRes" onclick="scrolleame('#matriz');">    
         <div class="col-md-12 btnres" style="cursor:pointer;">
-            <div style="color:#cc0099;">
+            <div style="color: #cc6600;">
                 <div class="col-md-4"><i class="fa fa fa-sitemap fa-3x iconRes"></i></div>
-                <div class="col-md-8"><h2 style="text-align:left; padding-left:60px;"><strong>Matriz y Plan de compensación</strong><h2></div>
+                <div class="col-md-8"><h2 style="text-align:left; padding-left:60px;"><strong>Matriz y Planes</strong><h2></div>
             </div>
             
         </div>
@@ -567,25 +550,27 @@ Santa Barbara, CA 93103</p>
 </div>
 <!-- /.Live preview-->
 <div class="modal fade modal-ext" id="ModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog modal-lg" role="document">
+          <center>  
+            <div class="modal-dialoga modal-lg" role="document">
                 <!--Content-->
                 <div class="modal-content">
                     <!--Header-->
-                    <div class="modal-header" >
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div>
+                        <button style="    z-index: 1111111; position: absolute; width: 50px; right: 0; background-color: white;" type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
                     <!--Body-->
                 <div class="content">    
-                    <div class="modal-body video-container">
+                    <div class="modal-bodya video-container">
                         <iframe id="millenniumVideo" width="560" height="315" src="https://www.youtube.com/embed/cTc9cHr6S9U" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
         
         <!--/.Content-->
-        </div>
-   </div>
+                </div>
+            </div>
+          </center>
 </div>
 <!-- /.Live preview-->
 
@@ -595,8 +580,7 @@ Santa Barbara, CA 93103</p>
 
 
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-
+    
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
 
@@ -670,6 +654,7 @@ _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
 $.src="//v2.zopim.com/?3uI0akGKa9VYI2Ig9TaGHTxY4KCGb3j1";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
+
 
 </body>
 
