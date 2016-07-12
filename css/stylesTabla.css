@@ -31,11 +31,9 @@ color: #ffffff;
 	height: 70px;
 	width: 100%;
 	padding: 5px 0px 0px 0px;
-	border-bottom: 1px solid #1b243c;
-	background: #52A93E;
-	background: -webkit-gradient(linear, left top, left bottom, from(#303e69), to(#374878));
-	background: -moz-linear-gradient(top, #303e69, #374878);
-	background: linear-gradient(#303e69, #374878);
+	border-bottom: 1px solid #ff3300;
+	background: #ff6600;
+
 	}
 
 /* --- header row 2 ---  */
@@ -43,16 +41,14 @@ color: #ffffff;
 	height: 100px;
 	width: 100%;
 	padding: 5px 0px;
-	border-top: 1px solid #455A96;
-	background: #7DCF3D;
-	background: -webkit-gradient(linear, left top, left bottom, from(#455A96), to(#455a96));
-	background: -moz-linear-gradient(top, #455A96, #455a96);
-	background: linear-gradient(#455A96, #455a96);
+	border-top: 1px solid #ff3300;
+	background: #ff3300;
+
 	}
 	
 .price_table .column_1{height: 100%;
 	float: left;
-	width:270px;
+	width:20%;
    -webkit-transform: translate(0px, 0px);
    -moz-transform: translate(0px, 0px);
    -o-transform: translate(0px, 0px);
@@ -69,19 +65,6 @@ color: #ffffff;
 .price_table .column_1:hover{
 	position: relative;
 	z-index: 100;
-	box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
-	-webkit-box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
-	-moz-box-shadow: 5px 0px 25px rgba(0,0,0,0.7);
-	-webkit-transform: translate(-5px,-15px);
-   -moz-transform: translate(-5px,-15px);
-   -o-transform: translate(-5px,-15px);
-   -ms-transform: translate(-5px,-15px);
-   transform: translate(-5px,-15px);
-   -webkit-transition-delay: 0s;
-   -moz-transition-delay: 0s;
-   -o-transition-delay: 0s;
-   -ms-transition-delay: 0s;
-   transition-delay: 0s;
 	}
 
 .price_table .column_1:hover .header_row_1,	
@@ -165,3 +148,6 @@ background: url("../images/icon-no.gif") no-repeat 0 0;
 	background: -moz-linear-gradient(top, #fddfba,  #fab371);
 	background: linear-gradient(#fddfba, #fab371);
 	}
+.celda {
+	background-color: #f2f2f2 !important;
+}
