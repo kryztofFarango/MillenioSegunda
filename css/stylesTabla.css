@@ -28,10 +28,9 @@ color: #ffffff;
 	
 /* --- header row 1 ---  */
 .price_table .column_1 .header_row_1{
-	height: 70px;
+	height: 120px;
 	width: 100%;
 	padding: 5px 0px 0px 0px;
-	border-bottom: 1px solid #ff3300;
 	background: #ff6600;
 
 	}
@@ -41,7 +40,6 @@ color: #ffffff;
 	height: 100px;
 	width: 100%;
 	padding: 5px 0px;
-	border-top: 1px solid #ff3300;
 	background: #ff3300;
 
 	}
@@ -49,16 +47,6 @@ color: #ffffff;
 .price_table .column_1{height: 100%;
 	float: left;
 	width:20%;
-   -webkit-transform: translate(0px, 0px);
-   -moz-transform: translate(0px, 0px);
-   -o-transform: translate(0px, 0px);
-   -ms-transform: translate(0px, 0px);
-   transform: translate(0px, 0px);
-   -webkit-transition: all 0.2s ease-in-out;
-   -moz-transition: all 0.2s ease-in-out;
-   -o-transition: all 0.2s ease-in-out;
-   -ms-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
 	}	
 
 /**** COLUMN HOVERS ****/
