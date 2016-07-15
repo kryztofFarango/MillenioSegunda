@@ -345,5 +345,11 @@ padding: 10px;
    background-color: white; 
      margin-right: 0rem;
   margin-left: 0rem;
+}
+}
+@media (max-width: 525px){
+    .imgres{
+    width:100%;
+  }
 
 }
