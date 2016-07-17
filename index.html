@@ -25,11 +25,13 @@
     <link href="css/owl.theme.css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="img/ico.png" />
+    <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
 
 
 
     <link href="css/prettify.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.section-scroll.js"></script>
 
 
     
@@ -114,7 +116,7 @@
 
     <!--/.Main layout-->
     <!--Content-->
-<div id="home" data-spy="affix" data-offset-top="120px">
+<div id="home" >
     <nav id="mainnav" class="navbar navbar-dark primary-color-dark navbar contentres col-md-12" style="background-color: white !important; padding:0!important; line-height:0!important;">
             <!-- Collapse button-->
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
@@ -239,7 +241,7 @@
     <div class="contentres" style="background-image:url('img/imagenintro.jpg'); min-height:400px; background-size:100%">
         <h1 style="padding-top:250px" class="titulos  fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
     </div>
-    <div style="height: 90px" id="replicas" class="contentres" ></div>
+    <div style="height: 90px" id="replicas" class="contentres scrollable-section" data-section-title="Replicas" ></div>
 
     <!--Réplicas Web Btn-->
     <div class="container btnres btnRes"  onclick="scrolleame('#replicas1');">    
@@ -459,9 +461,9 @@ Santa Barbara, CA 93103</p>
                 <div class="col-md-4">
                     <h5 class="title">Producto</h5>
                     <ul>
-                        <li><a href="#replica">Réplica Web</a></li>
+                        <li><a href="#replicas">Réplica Web</a></li>
                         <li><a href="#tienda">Tienda Online</a></li>
-                        <li><a href="#modelo">Módulo Administrador</a></li>
+                        <li><a href="#modulo">Módulo Administrador</a></li>
                         <li><a href="#oficina">Oficina Virtual</a></li>
                         <li><a href="#billetera">Billetera o Ewallet</a></li>
                         <li><a href="#matriz">Matríz y Plan de compensación</a></li>
@@ -607,6 +609,8 @@ Santa Barbara, CA 93103</p>
                }
 
             });
+            $('body').sectionScroll();
+
 
             var url = $("#millenniumVideo").attr('src');
     
@@ -643,7 +647,6 @@ Santa Barbara, CA 93103</p>
 
     </script>
 <script>
-new ().init();
 </script>
 
     <script src="js/bootstrap-collapse.js"></script>
