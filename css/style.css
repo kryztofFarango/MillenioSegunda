@@ -367,3 +367,13 @@ padding: 10px;
     padding-left: 10px;
     padding-bottom: 12px;
 }
+.flecha{
+  width: 75%; 
+  float: right;
+}
+@media (max-width: 525px){
+  .flecha{
+    width: 100%;
+    padding: 10px;
+  }
+}
