@@ -57,18 +57,21 @@ footer.page-footer {
 .carousel-caption {
     height: 100%;
     padding-top: 7rem;
+    
 }
 
 
 /*para video*/
 .videores{
-    
+    width: 100%;
 }
 
-@media (min-width: 525px) {
+@media (max-width: 525px) {
 
 .videores {
+height: 100%;
 width: 100%;
+position: absolute;
 }
 }
 /*para content*/
@@ -352,4 +355,15 @@ padding: 10px;
     width:100%;
   }
 
+}
+
+#SkypeButton_Call_colombia_millennium_1 {
+  margin: 0px;
+}
+
+#SkypeButton_Call_colombia_millennium_1 img {
+  margin:0 !important;
+    vertical-align:middle !important;
+    padding-left: 10px;
+    padding-bottom: 12px;
 }

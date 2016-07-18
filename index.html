@@ -26,6 +26,7 @@
 
     <link rel="icon" type="image/png" href="img/ico.png" />
     <link rel="stylesheet" type="text/css" href="css/section-scroll.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.progresstracker.css">
 
 
 
@@ -50,12 +51,14 @@
                 <div class="view hm-black-light">
 
                     <!--Video source-->
-                    <video class="video-full videores contentres" autoplay loop style=" z-index:-1;" poster="img/poster.png">
+                    <div class="contentres">
+                    <video class="video-full videores" autoplay loop style=" z-index:-1;" poster="img/poster.png">
                         <source src="videos/videohome.mp4" type="video/mp4" />
                     </video>
-                    <video class="video-full videores btnres" autoplay loop style=" z-index:-1;" poster="img/poster.png"> 
-                        <source src="videos/videoandroid.mp4" type="video/mp4" />
-                    </video>
+                    </div>
+                    <div class="btnres carousel" style=" z-index:-1; background-image: url('img/poster2.png'); background-position-x: -390px;">
+
+                    </div>
                     <div class="full-bg-img">
                         
                          <div class="topbrand" style="background-color: rgba(0, 0, 0, .4); height:120px; padding: 10px;">
@@ -63,7 +66,7 @@
                                 <img src="img/millenniumlogo.png">
                             </div>  
                             <div style="float:right; padding-top: 20px;">
-                                <a href="#home"><button type="button" class="btn btn-default">Producto</button></a>
+                                <a class="desplaza" href="#home"><button type="button" class="btn btn-default">Producto</button></a>
                                 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalProducto">Demo y Precios</button>
                             </div>
                           </div>
@@ -132,7 +135,7 @@
                     <ul class="nav navbar-nav">
 
                         
-                            <a class="waves-effect waves-light replicabtn" href="#replicas">
+                            <a class="waves-effect waves-light replicabtn desplaza" href="#replicas">
                                 <li id="replica" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                             
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
@@ -144,7 +147,7 @@
                             
                         </li></a>
 
-                    <a class="waves-effect waves-light tiendabtn" href="#tienda">                   
+                    <a class="waves-effect waves-light tiendabtn desplaza" href="#tienda">                   
                         <li id="tiendas" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style:solid; border-width: 2px; border-color: #f2f2f2;">
 
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
@@ -157,7 +160,7 @@
                         </li>
                         </a>
 
-                        <a class="waves-effect waves-light modulobtn" href="#modulo"> 
+                        <a class="waves-effect waves-light modulobtn desplaza" href="#modulo"> 
                             <li id="modulos"class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;" >
                                     <div>
@@ -168,7 +171,7 @@
                             
                         </li>
                         </a>
-                        <a class="waves-effect waves-light oficinabtn" href="#oficina">
+                        <a class="waves-effect waves-light oficinabtn desplaza" href="#oficina">
                             <li id="oficinas" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
                                     <div>
@@ -179,7 +182,7 @@
                             
                         </li>
                         </a>
-                        <a class="waves-effect waves-light billeterabtn" href="#billetera">
+                        <a class="waves-effect waves-light billeterabtn desplaza" href="#billetera">
                         <li id="billeteras" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;  border-right-style: solid; border-width: 2px; border-color: #f2f2f2;">
                             
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
@@ -191,7 +194,7 @@
                             
                         </li>
                         </a>
-                        <a class="waves-effect waves-light matrizbtn" href="#matriz">
+                        <a class="waves-effect waves-light matrizbtn desplaza" href="#matriz">
                         <li id="matrizs" class="nav-item col-md-2" style="margin-left: 0; min-height: 130px;">
                             
                                 <div style="width:100%; cursor: pointer; text-align: center; padding-top:30px;">
@@ -241,7 +244,7 @@
     <div class="contentres" style="background-image:url('img/imagenintro.jpg'); min-height:400px; background-size:100%">
         <h1 style="padding-top:250px" class="titulos  fadeInDown">La Administración de tu negocio en <strong>una sola herramienta</strong></h1>
     </div>
-    <div style="height: 90px" id="replicas" class="contentres scrollable-section" data-section-title="Replicas" ></div>
+    <div style="height: 90px" id="replicas" class="contentres"></div>
 
     <!--Réplicas Web Btn-->
     <div class="container btnres btnRes"  onclick="scrolleame('#replicas1');">    
@@ -255,7 +258,7 @@
     </div>
         <hr class="btnres">
     <!--Réplicas Web Content-->
-    <div id=replicas1 class="contentres" style="background-color:white;">
+    <div id="replicas1" class="contentres" style="background-color:white;">
         <div class="container">
 
             <div class="col-md-6  fadeInLeft">
@@ -655,6 +658,7 @@ Santa Barbara, CA 93103</p>
     <script src="js/owl.carousel.js"></script>
     <script src="js/prettify.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/progresstracker.js"></script>
 
 <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -664,6 +668,12 @@ $.src="//v2.zopim.com/?3uI0akGKa9VYI2Ig9TaGHTxY4KCGb3j1";z.t=+new Date;$.
 type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 
+<script>
+    (function() {
+        //Standard initialisation
+        $('body').desplaza();
+    })();
+</script>
 
 </body>
 
